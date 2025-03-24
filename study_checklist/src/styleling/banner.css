@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+  }
+
+  .component {
+    padding: 20px;
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+
+
+.ban {
+    height: 140px; 
+    text-align: center;
+    font-size: 70px;
+    width: 100vw;
+    background-color:darkseagreen;
+    border-radius: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+}
+
+.todo{
+    border-radius: 50px;
+    width :120px;
+    background-color:darkseagreen;
+
+}
+
+.com{
+    border-radius: 50px;
+    width :150px;
+    background-color:darkseagreen;
+
+}
