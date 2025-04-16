@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Data Structures & Algorithms",
+    "description": "Master DSA with hands-on coding and problem-solving in Java",
+    "price": 12999
+  },
+  {
+    "name": "Full-Stack Web Development",
+    "description": "Learn MERN stack (MongoDB, Express, React, Node.js) and build scalable web applications.",
+    "img": "/src/assets/images/fs.webp",
+    "price": 14999
+  },
+  {
+    "name": "Data Structures & Algorithms",
+    "description": "Master DSA with hands-on coding and problem-solving in Java.",
+    "img": "/src/assets/images/bootcamp.webp",
+    "price": 12999
+  },
+  {
+    "name": "Full-Stack Web Development",
+    "description": "Learn MERN stack (MongoDB, Express, React, Node.js) and build scalable web applications.",
+    "img": "/src/assets/images/fs.webp",
+    "price": 14999
+  },
+  {
+    "name": "Data Structures & Algorithms",
+    "description": "Master DSA with hands-on coding and problem-solving in Java.",
+    "img": "/src/assets/images/bootcamp.webp",
+    "price": 12999
+  },
+  {
+    "name": "Native Mobile App Development",
+    "description": "Create cross-platform mobile apps using React Native with real-world projects.",
+    "img": "/src/assets/images/react.jpg",
+    "price": 15999
+  },
+  {
+    "name": "Cybersecurity & Ethical Hacking",
+    "description": "Learn penetration testing, network security, and ethical hacking techniques.",
+    "img": "/src/assets/images/img1.webp",
+    "price": 19999
+  },
+  {
+    "name": "Native Mobile App Development",
+    "description": "Create cross-platform mobile apps using React Native with real-world projects.",
+    "img": "/src/assets/images/react.jpg",
+    "price": 15999
+  }
+]

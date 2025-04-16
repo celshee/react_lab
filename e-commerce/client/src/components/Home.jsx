@@ -1,7 +1,6 @@
 import React from 'react'
-import Card from './Card'
-import Navbar from './navbar'
-import Banner from './banner'
+import Navbar from './navbar.jsx'
+import Banner from './banner.jsx'
 function Home() {
   return (
     <div className='bg-[url("/src/assets/images/main.webp")] bg-cover bg-center h-screen'>

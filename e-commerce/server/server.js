@@ -1,24 +1,39 @@
+import express from "express";
+import fs from "fs";
+import cors from "cors";
 
-// creaeting restfull endpoints 
-import express from 'express';
-import mongoose from 'mongoose';
-import Course from './models/courses.js'; // Notice the `.js` is required
-import Dbconnect from './config/db.js';
-// const Course  = require('./models/courses');
+const app = express();
+const PORT = 4000;
 
-const app = express()
- 
-// app.post()
+app.use(cors());
+app.use(express.json());
 
-Dbconnect();
-//get alll cources
-app.get('/',()=>{
-const obj = Course.find()
+const filePath = "./cartData.json";
+
+app.post("/add-to-cart", (req, res) => {
+    console.log(req.body);
+
+    const newCourse = req.body;
+
+    let cart = [];
+
+    if (fs.existsSync(filePath)) {
+        try {
+            const data = fs.readFileSync(filePath, "utf-8");
+            cart = JSON.parse(data || "[]"); // fallback to empty array
+        } catch (err) {
+            console.error("Invalid JSON in cartData.json:", err.message);
+            cart = []; // fallback to clean state
+        }
+    }
+
+
+    cart.push(newCourse);
+    fs.writeFileSync(filePath, JSON.stringify(cart, null, 2));
+
+    res.send({ message: "Course added to cart" });
 });
 
-
-app.listen();
-
-
-
-// purchase courses
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});

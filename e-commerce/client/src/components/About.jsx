@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./navbar";
-import Banner from "./banner";
+import Navbar from "./navbar.jsx";
+import Banner from "./banner.jsx";
 function About() {
   return (
     <div className="bg-blue-950 h-screen">
