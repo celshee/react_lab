@@ -1,8 +1,17 @@
-import mongoose from "mongoose"
+import mongoose, { Schema, Document, model } from "mongoose";
 
-const todoSchema = new mongoose.Schema({
-    todolist:String
-})
+// Step 1: Define the interface for the document
+interface IPlanned extends Document {
+  todolist: string;
+}
 
-const planned =  mongoose.model('planned',todoSchema)
-export default planned
+// Step 2: Define the schema with correct typing
+const todoSchema: Schema<IPlanned> = new Schema({
+  todolist: { type: String, required: true },
+});
+
+// Step 3: Create the model using the interface
+const Planned = model<IPlanned>('Planned', todoSchema);
+
+// Step 4: Export
+export default Planned;
